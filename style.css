@@ -1,0 +1,101 @@
+body {
+  margin: 25px;
+}
+
+.tooltip {
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid silver;
+  color: #222;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #a6a6a6;
+  opacity: 0.9;
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#details, #initial {
+  margin-top: 2rem;
+}
+
+table {
+  margin-bottom: 0;
+}
+td, th {
+  padding: 6px 9px;
+}
+td {
+  text-align: right;
+}
+
+.container {
+  width: 100%;
+}
+
+.footer {
+  border-top: 1px solid silver;
+  color: #888888;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+#close-details {
+  color: #FA5858;
+  text-decoration: none;
+  font-size: 4rem;
+  text-align: right;
+  line-height: 4.5rem;
+}
+#close-details:hover {
+  color: red;
+}
+
+#map {
+  font-size: 0; /* to prevent margin at bottom of map container */
+  border: 1px solid silver;
+  background: #E6E6E6;
+}
+
+#legend {
+  border: 1px solid silver;
+  border-top: 0;
+}
+
+.legend-key path {
+  display: none;
+}
+
+.legend-key text {
+  font-size: 1rem;
+}
+
+.legend-key line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* Thanks to http://colorbrewer2.org/ */
+.YlGnBu .q0-9{fill:rgb(255,255,217)}
+.YlGnBu .q1-9{fill:rgb(237,248,177)}
+.YlGnBu .q2-9{fill:rgb(199,233,180)}
+.YlGnBu .q3-9{fill:rgb(127,205,187)}
+.YlGnBu .q4-9{fill:rgb(65,182,196)}
+.YlGnBu .q5-9{fill:rgb(29,145,192)}
+.YlGnBu .q6-9{fill:rgb(34,94,168)}
+.YlGnBu .q7-9{fill:rgb(37,52,148)}
+.YlGnBu .q8-9{fill:rgb(8,29,88)}
+
+g.features {
+  stroke: #d8d8d8;
+  stroke-width: 0.5;
+}
+g.features path:hover {
+  opacity: 0.5;
+}
