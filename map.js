@@ -236,8 +236,8 @@ d3.json('data/states.json', function(error, features) {
             .append('path')
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
-            .style("stroke", "#fff")
-            .style("stroke-width", ".2")
+            .style("stroke", "rgba(0,0,0,1")
+            .style("stroke-width", ".3")
             .style("cursor", "default")
             .style("fill", function(d) {
                 // Get data value

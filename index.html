@@ -7,6 +7,7 @@
     <!-- Thanks to this great tutorial: http://data-map-d3.readthedocs.io/en/latest/index.html -->
     <!-- CSS libraries -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
     <!-- Custom CSS styles -->
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -25,7 +26,7 @@
         <div id="map">
             <!-- Map container -->
         </div>
-        <div id="legend">
+        <div id="legend-new">
             <!-- Legend container -->
         </div>
         <div id="details" class="hidden row">
@@ -47,12 +48,12 @@
             </div>
         </div>
         <div class="footer">
-            <strong>Data sources</strong>: Data from the Swiss Federal Statistical Office, both the <a href="http://www.bfs.admin.ch/bfs/portal/de/index/dienstleistungen/geostat/datenbeschreibung/generalisierte_gemeindegrenzen.html" target="_blank">geographical data</a> and the <a href="http://www.bfs.admin.ch/bfs/portal/de/index/regionen/02/daten.html" target="_blank">statistical data</a>.
+            <strong>Data sources</strong>: National Conference of State Legislatures, National Organization for the Reform of Marijuana Laws
         </div>
     </div>
     <!-- Mustache template, rendered later to show the details of a feature -->
     <script id="template" type="x-tmpl-mustache">
-        <h3 class="six columns">{{ state }}</h3>
+        <h3 class="six columns state-name">{{ state }}</h3>
         <table class="five columns">
             <tr>
                 <th>Recreational:</th>
@@ -68,7 +69,7 @@
             </tr>
             <tr>
                 <th>Decriminalized:</th>
-                <td>{{ decriminilization }} </td>
+                <td>{{ decriminalization }} </td>
             </tr>
             <tr>
                 <th>Mandatory sentencing:</th>
@@ -79,8 +80,8 @@
                 <td>{{ ballot }} </td>
             </tr>
             <tr>
-                <th>Link:</th>
-                <td>{{ statelink }} </td>
+                <th>Story archive:</th>
+                <td><a target="_blank" href="{{ statelink }}">{{ state }} pot articles</a> </td>
             </tr>
         </table>
         <a href="#" id="close-details" class="one column" onclick="hideDetails(); return false;">&#x274c;</a>
