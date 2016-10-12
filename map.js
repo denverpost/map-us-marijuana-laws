@@ -241,8 +241,7 @@ d3.json('data/states.json', function(error, features) {
             .style("cursor", "default")
             .style("fill", function(d) {
                 // Get data value
-                console.log(d);
-                var value = d.properties.status;
+                var value = dataById[d.properties.name].status;
                 if (value) {
                     //If value exists…
                     return color(value);
