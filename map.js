@@ -189,6 +189,10 @@ function updateLegend() {
     g.call(legendXAxis);
 }
 
+// Define linear scale for output
+var color = d3.scale.linear()
+    .range(["rgb(213,222,217)", "rgb(161,217,155)", "rgb(49,163,84)", "rgb(0,0,0)"]);
+
 // Load the features from the GeoJSON.
 d3.json('data/states.json', function(error, features) {
 
@@ -220,6 +224,8 @@ d3.json('data/states.json', function(error, features) {
             })
             .map(data);
 
+        color.domain([0, 1, 2, 3]); // setting the range of the input data
+
         // We add the features to the <g> element created before.
         // D3 wants us to select the (non-existing) path objects first ...
         mapFeatures.selectAll('path')
@@ -230,14 +236,26 @@ d3.json('data/states.json', function(error, features) {
             .append('path')
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
+            .style("stroke", "#fff")
+            .style("stroke-width", ".2")
+            .style("cursor", "default")
+            .style("fill", function(d) {
+                // Get data value
+                var value = dataById[d.properties.name].status;
+                if (value) {
+                    //If value exists…
+                    return color(value);
+                } else {
+                    //If value is undefined…
+                    return "rgb(213,222,217)";
+                }
+            })
             // When the mouse moves over a feature, show the tooltip.
             .on('mousemove', showTooltip)
             // When the mouse moves out of a feature, hide the tooltip.
             .on('mouseout', hideTooltip)
             // When a feature is clicked, show the details of it.
-            .on('click', showDetails);
-
-        // Call the function to update the map colors.
+            .on('click', showDetails)
         //updateMapColors();
 
     });
