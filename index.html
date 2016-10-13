@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
     <title>U.S. Marijuana Laws</title>
     <!-- Thanks to this great tutorial: http://data-map-d3.readthedocs.io/en/latest/index.html -->
     <!-- CSS libraries -->
@@ -15,7 +16,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <h3 class="nine columns">U.S. Cannabis Laws</h3>
+            <h1 class="twleve columns">U.S. Cannabis Laws</h1>
             <!-- <select id="select-key" class="three columns">
                 <option value="urban" selected="selected">Urban area in %</option>
                 <option value="agriculture">Agricultural area in %</option>
@@ -31,6 +32,13 @@
                 <span style="border-top: 5px solid rgb(161, 217, 155); margin-right: 10px;">Medical marijuana states</span>
                 <span style="border-top: 5px solid rgb(213, 222, 217); margin-right: 10px;">Marijuana prohibition states</span>
                 <span style="border-top: 5px solid #2c7fb8; margin-right: 10px;">2016 ballot measure</span>
+            </p>
+        </div>
+        <div id="legend-container-mobile">
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(49, 163, 84); ">Recreational marijuana states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(161, 217, 155); ">Medical marijuana states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(213, 222, 217); ">Marijuana prohibition states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid #2c7fb8; ">2016 ballot measure</span>
             </p>
         </div>
         <div id="details" class="hidden row">
@@ -87,7 +95,7 @@
                 <td><a target="_blank" href="{{ statelink }}">{{ state }} pot articles</a> </td>
             </tr>
         </table>
-        <a href="#" id="close-details" class="one column" onclick="hideDetails(); return false;">&#x274c;</a>
+        <a href="#" id="close-details" class="one column" onclick="hideDetails(); return false;">&#x2716;</a>
     </script>
     <!-- JS libraries -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>

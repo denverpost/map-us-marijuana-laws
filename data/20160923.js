@@ -5,12 +5,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/alabama/"
+    "statelink": "http://www.thecannabist.co/tag/alabama/",
+    "": ""
   },
   {
     "state": "Alaska",
@@ -18,12 +20,14 @@
     "status": 2,
     "recreational": "Voter approved, 2014",
     "medical": "Voter approved, 1998",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/alaska/"
+    "statelink": "http://www.thecannabist.co/tag/alaska/",
+    "": ""
   },
   {
     "state": "Arizona",
@@ -31,12 +35,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 2010",
+    "ballotkey": "Yes",
     "ballot": "Recreational measure",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/arizona/"
+    "statelink": "http://www.thecannabist.co/tag/arizona/",
+    "": ""
   },
   {
     "state": "Arkansas",
@@ -44,12 +50,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "Yes",
     "ballot": "Medical measures",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/arkansas/"
+    "statelink": "http://www.thecannabist.co/tag/arkansas/",
+    "": ""
   },
   {
     "state": "California",
@@ -57,12 +65,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 1996",
+    "ballotkey": "Yes",
     "ballot": "Recreational measure",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/california/"
+    "statelink": "http://www.thecannabist.co/tag/california/",
+    "": ""
   },
   {
     "state": "Colorado",
@@ -70,12 +80,14 @@
     "status": 2,
     "recreational": "Voter approved, 2012",
     "medical": "Voter approved, 2000",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/colorado/"
+    "statelink": "http://www.thecannabist.co/tag/colorado/",
+    "": ""
   },
   {
     "state": "Connecticut",
@@ -83,12 +95,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2012",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/connecticut/"
+    "statelink": "http://www.thecannabist.co/tag/connecticut/",
+    "": ""
   },
   {
     "state": "Delaware",
@@ -96,12 +110,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2011",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/delaware/"
+    "statelink": "http://www.thecannabist.co/tag/delaware/",
+    "": ""
   },
   {
     "state": "Washington, DC",
@@ -109,12 +125,14 @@
     "status": 2,
     "recreational": "Voter approved, 2014",
     "medical": "Voter approved, 1998",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/washington-d-c/"
+    "statelink": "http://www.thecannabist.co/tag/washington-d-c/",
+    "": ""
   },
   {
     "state": "Florida",
@@ -122,12 +140,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "Yes",
     "ballot": "Medical measure",
     "cbd": 2014,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/florida/"
+    "statelink": "http://www.thecannabist.co/tag/florida/",
+    "": ""
   },
   {
     "state": "Georgia",
@@ -135,12 +155,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2015,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/georgia/"
+    "statelink": "http://www.thecannabist.co/tag/georgia/",
+    "": ""
   },
   {
     "state": "Hawaii",
@@ -148,12 +170,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2000",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/hawaii/"
+    "statelink": "http://www.thecannabist.co/tag/hawaii/",
+    "": ""
   },
   {
     "state": "Idaho",
@@ -161,12 +185,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/idaho/"
+    "statelink": "http://www.thecannabist.co/tag/idaho/",
+    "": ""
   },
   {
     "state": "Illinois",
@@ -174,12 +200,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2013",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/illinois/"
+    "statelink": "http://www.thecannabist.co/tag/illinois/",
+    "": ""
   },
   {
     "state": "Indiana",
@@ -187,12 +215,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/indiana/"
+    "statelink": "http://www.thecannabist.co/tag/indiana/",
+    "": ""
   },
   {
     "state": "Iowa",
@@ -200,12 +230,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/iowa/"
+    "statelink": "http://www.thecannabist.co/tag/iowa/",
+    "": ""
   },
   {
     "state": "Kansas",
@@ -213,12 +245,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/kansas/"
+    "statelink": "http://www.thecannabist.co/tag/kansas/",
+    "": ""
   },
   {
     "state": "Kentucky",
@@ -226,12 +260,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/kentucky/"
+    "statelink": "http://www.thecannabist.co/tag/kentucky/",
+    "": ""
   },
   {
     "state": "Louisiana",
@@ -239,12 +275,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2015,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/louisiana/"
+    "statelink": "http://www.thecannabist.co/tag/louisiana/",
+    "": ""
   },
   {
     "state": "Maine",
@@ -252,12 +290,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 1999",
+    "ballotkey": "Yes",
     "ballot": "Recreational measure",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/maine/"
+    "statelink": "http://www.thecannabist.co/tag/maine/",
+    "": ""
   },
   {
     "state": "Maryland",
@@ -265,12 +305,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2014",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/maryland/"
+    "statelink": "http://www.thecannabist.co/tag/maryland/",
+    "": ""
   },
   {
     "state": "Massachusetts",
@@ -278,12 +320,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 2012",
+    "ballotkey": "Yes",
     "ballot": "Recreational measure",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/massachusetts/"
+    "statelink": "http://www.thecannabist.co/tag/massachusetts/",
+    "": ""
   },
   {
     "state": "Michigan",
@@ -291,12 +335,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 2008",
+    "ballotkey": "No",
     "ballot": "Proposed recreational measure failed to make ballot",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/michigan/"
+    "statelink": "http://www.thecannabist.co/tag/michigan/",
+    "": ""
   },
   {
     "state": "Minnesota",
@@ -304,12 +350,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2014",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/minnesota/"
+    "statelink": "http://www.thecannabist.co/tag/minnesota/",
+    "": ""
   },
   {
     "state": "Mississippi",
@@ -317,12 +365,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/mississippi/"
+    "statelink": "http://www.thecannabist.co/tag/mississippi/",
+    "": ""
   },
   {
     "state": "Missouri",
@@ -330,12 +380,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "Proposed medical measure failed to make ballot",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/missouri/"
+    "statelink": "http://www.thecannabist.co/tag/missouri/",
+    "": ""
   },
   {
     "state": "Montana",
@@ -343,12 +395,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 2004",
-    "ballot": "Medical measure on ballot; measures to rescind MMJ law and to allow recreational sales failed to make ballot",
-    "cbd": "No",
-    "hemp": "Yes",
+    "ballotkey": "Yes",
+    "ballot": "Medical measure on ballot",
+    "cbd": "measures to rescind MMJ law and to allow recreational sales failed to make ballot",
+    "hemp": "No",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/montana/"
+    "statelink": "No",
+    "": "http://www.thecannabist.co/tag/montana/"
   },
   {
     "state": "Nebraska",
@@ -356,12 +410,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/nebraska/"
+    "statelink": "http://www.thecannabist.co/tag/nebraska/",
+    "": ""
   },
   {
     "state": "Nevada",
@@ -369,12 +425,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Voter approved, 2000",
+    "ballotkey": "Yes",
     "ballot": "Recreational measure",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/nevada/"
+    "statelink": "http://www.thecannabist.co/tag/nevada/",
+    "": ""
   },
   {
     "state": "New Hampshire",
@@ -382,12 +440,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2013",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/new-hampshire/"
+    "statelink": "http://www.thecannabist.co/tag/new-hampshire/",
+    "": ""
   },
   {
     "state": "New Jersey",
@@ -395,12 +455,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2009",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/new-jersey/"
+    "statelink": "http://www.thecannabist.co/tag/new-jersey/",
+    "": ""
   },
   {
     "state": "New Mexico",
@@ -408,12 +470,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2007",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/new-mexico/"
+    "statelink": "http://www.thecannabist.co/tag/new-mexico/",
+    "": ""
   },
   {
     "state": "New York",
@@ -421,12 +485,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2014",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/new-york/"
+    "statelink": "http://www.thecannabist.co/tag/new-york/",
+    "": ""
   },
   {
     "state": "North Carolina",
@@ -434,12 +500,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/north-carolina/"
+    "statelink": "http://www.thecannabist.co/tag/north-carolina/",
+    "": ""
   },
   {
     "state": "North Dakota",
@@ -447,12 +515,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "Yes",
     "ballot": "Medical measure",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/north-dakota/"
+    "statelink": "http://www.thecannabist.co/tag/north-dakota/",
+    "": ""
   },
   {
     "state": "Ohio",
@@ -460,12 +530,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2016",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/ohio/"
+    "statelink": "http://www.thecannabist.co/tag/ohio/",
+    "": ""
   },
   {
     "state": "Oklahoma",
@@ -473,12 +545,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "Proposed medical measure expected to appear on future ballot",
     "cbd": 2015,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/oklahoma/"
+    "statelink": "http://www.thecannabist.co/tag/oklahoma/",
+    "": ""
   },
   {
     "state": "Oregon",
@@ -486,12 +560,14 @@
     "status": 2,
     "recreational": "Voter approved, 2014",
     "medical": "Voter approved, 1998",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/oregon/"
+    "statelink": "http://www.thecannabist.co/tag/oregon/",
+    "": ""
   },
   {
     "state": "Pennsylvania",
@@ -499,12 +575,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2016",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/pennsylvania/"
+    "statelink": "http://www.thecannabist.co/tag/pennsylvania/",
+    "": ""
   },
   {
     "state": "Rhode Island",
@@ -512,12 +590,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2007",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "Yes",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/rhode-island/"
+    "statelink": "http://www.thecannabist.co/tag/rhode-island/",
+    "": ""
   },
   {
     "state": "South Carolina",
@@ -525,12 +605,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/south-carolina/"
+    "statelink": "http://www.thecannabist.co/tag/south-carolina/",
+    "": ""
   },
   {
     "state": "South Dakota",
@@ -538,12 +620,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/south-dakota/"
+    "statelink": "http://www.thecannabist.co/tag/south-dakota/",
+    "": ""
   },
   {
     "state": "Tennessee",
@@ -551,12 +635,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/tennessee/"
+    "statelink": "http://www.thecannabist.co/tag/tennessee/",
+    "": ""
   },
   {
     "state": "Texas",
@@ -564,12 +650,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2015,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/texas/"
+    "statelink": "http://www.thecannabist.co/tag/texas/",
+    "": ""
   },
   {
     "state": "Utah",
@@ -577,12 +665,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2014,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/utah/"
+    "statelink": "http://www.thecannabist.co/tag/utah/",
+    "": ""
   },
   {
     "state": "Vermont",
@@ -590,12 +680,14 @@
     "status": 1,
     "recreational": "Not legal",
     "medical": "Legislation, 2004",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "Yes",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/vermont/"
+    "statelink": "http://www.thecannabist.co/tag/vermont/",
+    "": ""
   },
   {
     "state": "Virginia",
@@ -603,12 +695,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2015,
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/virginia/"
+    "statelink": "http://www.thecannabist.co/tag/virginia/",
+    "": ""
   },
   {
     "state": "Washington",
@@ -616,12 +710,14 @@
     "status": 2,
     "recreational": "Voter approved, 2012",
     "medical": "Voter approved, 1998",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/washington/"
+    "statelink": "http://www.thecannabist.co/tag/washington/",
+    "": ""
   },
   {
     "state": "West Virginia",
@@ -629,12 +725,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": "No",
     "hemp": "Yes",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "http://www.thecannabist.co/tag/west-virginia/"
+    "statelink": "http://www.thecannabist.co/tag/west-virginia/",
+    "": ""
   },
   {
     "state": "Wisconsin",
@@ -642,12 +740,14 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2013,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/wisconsin/"
+    "statelink": "http://www.thecannabist.co/tag/wisconsin/",
+    "": ""
   },
   {
     "state": "Wyoming",
@@ -655,11 +755,13 @@
     "status": 0,
     "recreational": "Not legal",
     "medical": "Not legal",
+    "ballotkey": "No",
     "ballot": "No",
     "cbd": 2015,
     "hemp": "",
     "decriminalization": "No",
     "mandatorysentencing": "No",
-    "statelink": "http://www.thecannabist.co/tag/wyoming/"
+    "statelink": "http://www.thecannabist.co/tag/wyoming/",
+    "": ""
   }
 ]

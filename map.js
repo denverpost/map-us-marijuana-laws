@@ -55,7 +55,7 @@ svg.call(zoom);
 // translate parameters will be set once the features are loaded.
 var projection = d3.geo.albersUsa()
     .translate([width / 2, height / 2]) // translate to center of screen
-    .scale([1000]); // scale things down so see entire US
+    .scale([1100]); // scale things down so see entire US
 
 // We prepare a path object and apply the projection to it.
 var path = d3.geo.path()
@@ -236,8 +236,8 @@ d3.json('data/states.json', function(error, features) {
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
             .style("stroke", function(d, i) {
-                var ballotValue = dataById[d.properties.name].ballot;
-                if (ballotValue != 'No') {
+                var ballotKey = dataById[d.properties.name].ballotkey;
+                if (ballotKey != 'No') {
                     d3.select(this.parentNode.appendChild(this))
                     return ('#2c7fb8')
                 } else {
@@ -245,8 +245,8 @@ d3.json('data/states.json', function(error, features) {
                 }
             })
             .style('stroke-width', function(d, i) {
-                var ballotValue = dataById[d.properties.name].ballot;
-                if (ballotValue != 'No') {
+                var ballotKey = dataById[d.properties.name].ballotkey;
+                if (ballotKey != 'No') {
                     d3.select(this.parentNode.appendChild(this))
                     return '2.5';
                 } else {
