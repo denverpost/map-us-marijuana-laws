@@ -6,61 +6,48 @@
     <meta name="viewport" content="width=device-width">
     <title>U.S. Marijuana Laws</title>
     <!-- Thanks to this great tutorial: http://data-map-d3.readthedocs.io/en/latest/index.html -->
-    <!-- CSS libraries -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-    <!-- Custom CSS styles -->
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <h1 class="twleve columns">U.S. Cannabis Laws</h1>
-            <!-- <select id="select-key" class="three columns">
-                <option value="urban" selected="selected">Urban area in %</option>
-                <option value="agriculture">Agricultural area in %</option>
-                <option value="forest">Forest area in %</option>
-                <option value="unproductive">Unproductive area in %</option>
-            </select> -->
+            <h1 class="twleve columns" id="map-title">U.S. Cannabis Laws</h1>
         </div>
-        <div id="map">
-            <!-- Map container -->
+    </div>
+    <div class="row" id="legend-container">
+        <p style="text-align: center"><span style="border-top: 5px solid rgb(49, 163, 84); margin-right: 10px;">Recreational marijuana states</span>
+            <span style="border-top: 5px solid rgb(161, 217, 155); margin-right: 10px;">Medical marijuana states</span>
+            <span style="border-top: 5px solid rgb(213, 222, 217); margin-right: 10px;">Marijuana prohibition states</span>
+            <span style="border-top: 5px solid #2c7fb8; margin-right: 10px;">2016 ballot measure</span>
+        </p>
+    </div>
+    <div class="row" id="legend-container-mobile">
+        <p class="legend-mobile"><span style="border-top: 5px solid rgb(49, 163, 84); ">Recreational marijuana states</span></p>
+        <p class="legend-mobile"><span style="border-top: 5px solid rgb(161, 217, 155); ">Medical marijuana states</span></p>
+        <p class="legend-mobile"><span style="border-top: 5px solid rgb(213, 222, 217); ">Marijuana prohibition states</span></p>
+        <p class="legend-mobile"><span style="border-top: 5px solid #2c7fb8; ">2016 ballot measure</span>
+        </p>
+    </div>
+    <div class="row" id="map"></div>
+    <div id="details" class="hidden row"></div>
+    <div class="row" id="initial">
+        <div class="six columns">
+            <p>The interactive map shows where recreational pot use is legal, which states have legalized the medical uses of marijuana, and which ones have cannabis-related ballot initiatives in November 2016. To provide some additional context, the map includes info about when states adopted their respective regulations, whether legalization measures were voter-approved or enacted via legislation, as well as whether possession of small amounts of marijuana has been decriminalized, meaning a citation instead of possible jail time or criminal record for a first-time offense.</p>
         </div>
-        <div id="legend-container">
-            <p style="text-align: center"><span style="border-top: 5px solid rgb(49, 163, 84); margin-right: 10px;">Recreational marijuana states</span>
-                <span style="border-top: 5px solid rgb(161, 217, 155); margin-right: 10px;">Medical marijuana states</span>
-                <span style="border-top: 5px solid rgb(213, 222, 217); margin-right: 10px;">Marijuana prohibition states</span>
-                <span style="border-top: 5px solid #2c7fb8; margin-right: 10px;">2016 ballot measure</span>
-            </p>
+        <div class="six columns">
+            <h5>Instructions</h5>
+            <ul>
+                <li>Click a state for details about its marijuana laws</li>
+                <li>Double-click to zoom in on small areas, such as Washington, DC; shift + double-click to zoom out. "Grab" map to move it.</li>
+                <li>To read stories about marijuana in a state, click the story archive link
+            </ul>
         </div>
-        <div id="legend-container-mobile">
-            <p class="legend-mobile"><span style="border-top: 5px solid rgb(49, 163, 84); ">Recreational marijuana states</span></p>
-            <p class="legend-mobile"><span style="border-top: 5px solid rgb(161, 217, 155); ">Medical marijuana states</span></p>
-            <p class="legend-mobile"><span style="border-top: 5px solid rgb(213, 222, 217); ">Marijuana prohibition states</span></p>
-            <p class="legend-mobile"><span style="border-top: 5px solid #2c7fb8; ">2016 ballot measure</span>
-            </p>
-        </div>
-        <div id="details" class="hidden row">
-            <!-- Details container -->
-        </div>
-        <div id="initial" class="row">
-            <div class="six columns">
-                <h5>About</h5>
-                <p>The interactive map shows where recreational pot use is legal, which states have legalized the medical uses of marijuana, and which ones have cannabis-related ballot initiatives in November 2016. To provide some additional context, the map includes info about when states adopted their respective regulations, whether legalization measures were voter-approved or enacted via legislation, as well as whether possession of small amounts of marijuana has been decriminalized, meaning a citation instead of possible jail time or criminal record for a first-time offense.</p>
-            </div>
-            <div class="six columns">
-                <h5>Instructions</h5>
-                <ul>
-                    <li>Click a state for details about its marijuana laws</li>
-                    <li>Double-click to zoom in on small areas, such as Washington, DC; shift + double-click to zoom out. "Grab" map to move it.</li>
-                    <li>To read stories about marijuana in a state, click the story archive link
-                </ul>
-            </div>
-        </div>
-        <div class="footer">
-            <strong>Data sources</strong>: National Conference of State Legislatures, National Organization for the Reform of Marijuana Laws
-        </div>
+    </div>
+    <div class="row footer">
+        <strong>Data sources</strong>: National Conference of State Legislatures, National Organization for the Reform of Marijuana Laws
     </div>
     <!-- Mustache template, rendered later to show the details of a feature -->
     <script id="template" type="x-tmpl-mustache">
@@ -97,10 +84,8 @@
         </table>
         <a href="#" id="close-details" class="one column" onclick="hideDetails(); return false;">&#x2716;</a>
     </script>
-    <!-- JS libraries -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-    <!-- Custom JS code -->
     <script src="map.js"></script>
 </body>
 
