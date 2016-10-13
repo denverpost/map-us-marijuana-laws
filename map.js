@@ -193,26 +193,6 @@ function updateLegend() {
 var color = d3.scale.linear()
     .range(["rgb(213,222,217)", "rgb(161,217,155)", "rgb(49,163,84)", "rgb(0,0,0)"]);
 
-// Load the features from the GeoJSON.
-// Dots for states with 2016 ballot measures
-d3.json("data/2016-ballot-measures.js", function(data) {
-    svg.selectAll("circle")
-        .data(data)
-        .enter()
-        .append("circle")
-        .attr("cx", function(d) {
-            return projection([d.lon, d.lat])[0];
-        })
-        .attr("cy", function(d) {
-            return projection([d.lon, d.lat])[1];
-        })
-        .attr("r", "5")
-        .style("fill", "rgb(117,112,179)")
-        .style("opacity", 1.0)
-        .style("pointer-events", "none")
-    console.log(data);
-});
-
 d3.json('data/states.json', function(error, features) {
 
     // Get the scale and center parameters from the features.
@@ -255,10 +235,26 @@ d3.json('data/states.json', function(error, features) {
             .append('path')
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
-            .style("stroke", "rgba(0,0,0,1")
-            .style("stroke-width", ".3")
-            .style("cursor", "default")
-            .style("fill", function(d) {
+            .style("stroke", function(d, i) {
+                var ballotValue = dataById[d.properties.name].ballot;
+                if (ballotValue != 'No') {
+                    d3.select(this.parentNode.appendChild(this))
+                    return ('#2c7fb8')
+                } else {
+                    return '#808080';
+                }
+            })
+            .style('stroke-width', function(d, i) {
+                var ballotValue = dataById[d.properties.name].ballot;
+                if (ballotValue != 'No') {
+                    d3.select(this.parentNode.appendChild(this))
+                    return '2.5';
+                } else {
+                    return '.2)';
+                }
+            })
+            .style('cursor', 'default')
+            .style('fill', function(d) {
                 // Get data value
                 var value = dataById[d.properties.name].status;
                 if (value) {
@@ -266,7 +262,7 @@ d3.json('data/states.json', function(error, features) {
                     return color(value);
                 } else {
                     //If value is undefined…
-                    return "rgb(213,222,217)";
+                    return 'rgb(213,222,217)';
                 }
             })
             // When the mouse moves over a feature, show the tooltip.
