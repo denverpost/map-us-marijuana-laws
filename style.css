@@ -1,187 +1,110 @@
-    body {
-        margin: 25px;
-    }
-    
-    .tooltip {
-        font-weight: bold;
-        padding: 0.5rem;
-        border: 1px solid silver;
-        color: #222;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px 0px #a6a6a6;
-        opacity: 0.9;
-        position: absolute;
-        font-size: 1.5rem;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    #details,
-    #initial {
-        margin-top: 2rem;
-    }
-    
-    table {
-        margin-bottom: 0;
-    }
-    
-    td,
-    th {
-        padding: 2px 9px;
-    }
-    /* td {
-        text-align: right;
-    } */
-    
-    .container {
-        width: 100%;
-    }
-    
-    #legend-container,
-    #legend-container-mobile {
-        margin-top: 2rem;
-    }
-    
-    p.legend-mobile {
-        text-align: center;
-        margin-bottom: .8rem;
-    }
-    
-    .footer {
-        border-top: 1px solid silver;
-        color: #888888;
-        font-size: 1.25rem;
-        text-align: center;
-        margin-top: 1rem;
-        padding: 0.5rem;
-    }
-    
-    #close-details {
-        color: #FA5858;
-        text-decoration: none;
-        font-size: 1.8em;
-        text-align: right;
-        line-height: 4.5rem;
-    }
-    
-    #close-details:hover {
-        color: red;
-    }
-    
-    #map {
-        font-size: 0;
-        /* to prevent margin at bottom of map container */
-        border: 1px solid rgba(0, 0, 0, .1);
-        /* background: #E6E6E6; */
-    }
-    /* #legend {
-    border: 1px solid silver;
-    border-top: 0;
+body {
+    margin: 25px;
 }
 
-.legend-key path {
+.tooltip {
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 1px solid silver;
+    color: #222;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #a6a6a6;
+    opacity: 0.9;
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.hidden {
     display: none;
 }
 
-.legend-key text {
-    font-size: 1rem;
+#details,
+#initial {
+    margin-top: 2rem;
 }
 
-.legend-key line {
-    stroke: #000;
-    shape-rendering: crispEdges;
-} */
-    
-    g.features {
-        stroke: #d8d8d8;
-        stroke-width: 0.5;
+table {
+    margin-bottom: 0;
+}
+
+td,
+th {
+    padding: 2px 9px;
+}
+
+.container {
+    width: 100%;
+}
+
+#legend-container,
+#legend-container-mobile {
+    margin-top: 2rem;
+}
+
+p.legend-mobile {
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.footer {
+    border-top: 1px solid silver;
+    color: #888888;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+#close-details {
+    color: #FA5858;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-align: right;
+    line-height: 4.5rem;
+}
+
+#close-details:hover {
+    color: red;
+}
+
+#map {
+    font-size: 0;
+    /* to prevent margin at bottom of map container */
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+g.features {
+    stroke: #d8d8d8;
+    stroke-width: 0.5;
+}
+
+g.features path:hover {
+    opacity: 0.5;
+}
+
+h3.state-name {
+    text-align: center;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    #legend-container {
+        display: none;
     }
-    
-    g.features path:hover {
-        opacity: 0.5;
+}
+
+@media only screen and (min-width: 769px) {
+    #legend-container-mobile {
+        display: none;
     }
-    
-    h3.state-name {
-        text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    h1#map-title {
+        font-size: 3.3rem;
     }
-    
-    ul {
-        margin-left: 2em;
-    }
-    
-    @media only screen and (max-width: 768px) {
-        #legend-container {
-            display: none;
-        }
-    }
-    
-    @media only screen and (min-width: 769px) {
-        #legend-container-mobile {
-            display: none;
-        }
-    }
-    
-    @media only screen and (max-width: 400px) {
-        h1#map-title {
-            font-size: 3.3rem;
-        }
-    }
-    /* For squares in legend
-.legend {
-    position: absolute;
-    left: -75px;
-    top: 385px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
 }
-
-div#legend-container {
-}
-
-ul#legend {
-    list-style-type: none;
-}
-
-li.legend-item {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: rgba(0, 0, 0, .8);
-    margin-bottom: -3px;
-    display: inline;
-}
-
-.legend-square {
-    width: 10px;
-    height: 10px;
-    float: left;
-    margin-right: 3px;
-    margin-top: 5px;
-}
-
-#recreational {
-    background: rgb(49, 163, 84);
-}
-
-#medical {
-    background: rgb(161, 217, 155);
-}
-
-#prohibition {
-    background: rgb(213, 222, 217);
-}
-
-.legend-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    float: left;
-    margin-right: 3px;
-    margin-top: 5px;
-}
-
-#ballot-measure {
-    background: rgba(117, 112, 179, 1);
-} */
