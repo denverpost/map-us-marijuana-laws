@@ -241,7 +241,7 @@ d3.json('data/states.json', function(error, features) {
                     d3.select(this.parentNode.appendChild(this))
                     return ('#2c7fb8')
                 } else {
-                    return '#808080';
+                    return '#F5F5F5';
                 }
             })
             .style('stroke-width', function(d, i) {
@@ -250,7 +250,7 @@ d3.json('data/states.json', function(error, features) {
                     d3.select(this.parentNode.appendChild(this))
                     return '2.5';
                 } else {
-                    return '.2)';
+                    return '.3)';
                 }
             })
             .style('cursor', 'default')
@@ -262,7 +262,7 @@ d3.json('data/states.json', function(error, features) {
                     return color(value);
                 } else {
                     //If value is undefined…
-                    return 'rgb(213,222,217)';
+                    return '#bdbdbd';
                 }
             })
             // When the mouse moves over a feature, show the tooltip.
