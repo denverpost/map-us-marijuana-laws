@@ -37,7 +37,7 @@
                 <p>The interactive map includes information on when states adopted regulations, whether legalization measures were voter-approved or enacted via legislation, CBD-only laws, as well as whether possession of small amounts of marijuana has been decriminalized, meaning a citation instead of possible jail time or criminal record for a first-time offense.</p>
             </div>
             <div class="seven columns">
-                <h5>Instructions</h5>
+                <h5 style="text-align: center;">Instructions</h5>
                 <ul>
                     <li>Click a state for details about its marijuana laws</li>
                     <li>Double-click to zoom in on small areas, such as Washington, DC; shift + double-click to zoom out. "Grab" map to move it.</li>
@@ -50,8 +50,8 @@
     </div>
     <!-- Mustache template, rendered later to show the details of a feature -->
     <script id="template" type="x-tmpl-mustache">
-        <h3 class="six columns state-name">{{ state }}</h3>
-        <table class="five columns">
+        <h3 class="five columns state-name">{{ state }}</h3>
+        <table class="six columns">
             <tr>
                 <th>Recreational:</th>
                 <td>{{ recreational }} </td>
@@ -73,7 +73,7 @@
                 <td>{{ mandatorysentencing }} </td>
             </tr>
             <tr>
-                <th>Ballot measure:</th>
+                <th>2016 ballot measure:</th>
                 <td>{{ ballot }} </td>
             </tr>
             <tr>

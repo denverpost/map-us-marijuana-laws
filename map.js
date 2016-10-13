@@ -250,7 +250,7 @@ d3.json('data/states.json', function(error, features) {
                     d3.select(this.parentNode.appendChild(this))
                     return '2.5';
                 } else {
-                    return '.3)';
+                    return '0.6';
                 }
             })
             .style('cursor', 'default')
