@@ -32,6 +32,7 @@ var tooltip = d3.select("#map")
 var zoom = d3.behavior.zoom()
     .scaleExtent([1, 10])
     .on('zoom', doZoom);
+
 svg.call(zoom);
 
 // We define a geographical projection
@@ -62,7 +63,6 @@ d3.json('data/states.json', function(error, features) {
         // We store the data object in the variable which is accessible from
         // outside of this function.
         mapData = data;
-        //console.log(data);
 
         // This maps the data of the CSV so it can be easily accessed by
         // the ID of the municipality, for example: dataById[2196]
@@ -87,6 +87,7 @@ d3.json('data/states.json', function(error, features) {
             .append('path')
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
+            // Make path stroke blue if it has a 2016 ballot issue
             .style("stroke", function(d, i) {
                 var ballotKey = dataById[d.properties.name].ballotkey;
                 if (ballotKey != 'No') {
@@ -96,6 +97,7 @@ d3.json('data/states.json', function(error, features) {
                     return '#F5F5F5';
                 }
             })
+            // ... and give it a wider stroke
             .style('stroke-width', function(d, i) {
                 var ballotKey = dataById[d.properties.name].ballotkey;
                 if (ballotKey != 'No') {
@@ -106,6 +108,7 @@ d3.json('data/states.json', function(error, features) {
                 }
             })
             .style('cursor', 'default')
+            // Fill state based on status value
             .style('fill', function(d) {
                 // Get data value
                 var value = dataById[d.properties.name].status;
@@ -124,9 +127,7 @@ d3.json('data/states.json', function(error, features) {
             // When a feature is clicked, show the details of it.
             .on('click', showDetails)
             //updateMapColors();
-
     });
-
 });
 
 /**
@@ -184,14 +185,14 @@ function showTooltip(f) {
     // Calculate the absolute left and top offsets of the tooltip. If the
     // mouse is close to the right border of the map, show the tooltip on
     // the left.
-    /* var left = Math.min(width - 4 * d.state.length, mouse[0] + 5);
+    var left = Math.min(width - 4 * d.state.length, mouse[0] + 5);
     var top = mouse[1] + 25;
 
     // Show the tooltip (unhide it) and set the name of the data entry.
     // Set the position as calculated before.
     tooltip.classed('hidden', false)
         .attr("style", "left:" + left + "px; top:" + top + "px")
-        .html(d.state); */
+        .html(d.state);
 }
 
 /**
