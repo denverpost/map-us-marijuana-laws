@@ -401,8 +401,8 @@
     "hemp": "No",
     "decriminalization": "No",
     "mandatorysentencing": "Yes",
-    "statelink": "No",
-    "": "http://www.thecannabist.co/tag/montana/"
+    "statelink": "http://www.thecannabist.co/tag/montana/",
+    "": ""
   },
   {
     "state": "Nebraska",
