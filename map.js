@@ -185,8 +185,8 @@ function showTooltip(f) {
     // Calculate the absolute left and top offsets of the tooltip. If the
     // mouse is close to the right border of the map, show the tooltip on
     // the left.
-    var left = Math.min(width - 4 * d.state.length, mouse[0] + 5);
-    var top = mouse[1] + 25;
+    var left = Math.min(width - 4 * d.state.length, mouse[0] - 50);
+    var top = mouse[1] + 100;
 
     // Show the tooltip (unhide it) and set the name of the data entry.
     // Set the position as calculated before.
