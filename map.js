@@ -58,7 +58,7 @@ d3.json('data/states.json', function(error, features) {
 
     // Read the data for the cartogram
     //d3.csv('data/result.csv', function(data) {
-    d3.json('data/20160923.js', function(data) {
+    d3.json('data/20161109.js', function(data) {
 
         // We store the data object in the variable which is accessible from
         // outside of this function.
@@ -88,17 +88,33 @@ d3.json('data/states.json', function(error, features) {
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
             // Make path stroke blue if it has a 2016 ballot issue
-            .style("stroke", function(d, i) {
-                var ballotKey = dataById[d.properties.name].ballotkey;
-                if (ballotKey != 'No') {
-                    d3.select(this.parentNode.appendChild(this))
-                    return ('#2c7fb8')
-                } else {
-                    return '#F5F5F5';
-                }
-            })
-            // ... and give it a wider stroke
-            .style('stroke-width', function(d, i) {
+            // .style("stroke", function(d, i) {
+            //     var ballotKey = dataById[d.properties.name].ballotkey;
+            //     if (ballotKey != 'No') {
+            //         d3.select(this.parentNode.appendChild(this))
+            //         return ('#2c7fb8')
+            //     } else {
+            //         return '#F5F5F5';
+            //     }
+            // })
+
+        .style("stroke", function(d, i) {
+            var ballotKey = dataById[d.properties.name].ballotkey;
+            var ballotPass = dataById[d.properties.name].ballotpass;
+            if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
+                d3.select(this.parentNode.appendChild(this))
+                return ('#ffff00')
+            } else if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
+                d3.select(this.parentNode.appendChild(this))
+                return ('#ff0000')
+            } else
+                d3.select(this.parentNode.appendChild(this))
+            return ('#f5f5f5')
+        })
+
+
+        // ... and give it a wider stroke
+        .style('stroke-width', function(d, i) {
                 var ballotKey = dataById[d.properties.name].ballotkey;
                 if (ballotKey != 'No') {
                     d3.select(this.parentNode.appendChild(this))
