@@ -87,31 +87,31 @@ d3.json('data/states.json', function(error, features) {
             .append('path')
             // As "d" attribute, we set the path of the feature.
             .attr('d', path)
-            // Make path stroke blue if it has a 2016 ballot issue
-            // .style("stroke", function(d, i) {
-            //     var ballotKey = dataById[d.properties.name].ballotkey;
-            //     if (ballotKey != 'No') {
-            //         d3.select(this.parentNode.appendChild(this))
-            //         return ('#2c7fb8')
-            //     } else {
-            //         return '#F5F5F5';
-            //     }
-            // })
+            //Make path stroke blue if it has a 2016 ballot issue
+            .style("stroke", function(d, i) {
+                var ballotKey = dataById[d.properties.name].ballotkey;
+                if (ballotKey != 'No') {
+                    d3.select(this.parentNode.appendChild(this))
+                    return ('#2c7fb8')
+                } else {
+                    return '#F5F5F5';
+                }
+            })
 
-        .style("stroke", function(d, i) {
-            var ballotKey = dataById[d.properties.name].ballotkey;
-            var ballotPass = dataById[d.properties.name].ballotpass;
-            if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
-                d3.select(this.parentNode.appendChild(this))
-                return ('#ffff00')
-            } else if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
-                d3.select(this.parentNode.appendChild(this))
-                return ('#ff0000')
-            } else
-                d3.select(this.parentNode.appendChild(this))
-            return ('#f5f5f5')
-        })
-
+        // This for different colored borders based on ballotpass status
+        // .style("stroke", function(d, i) {
+        //     var ballotKey = dataById[d.properties.name].ballotkey;
+        //     var ballotPass = dataById[d.properties.name].ballotpass;
+        //     if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
+        //         d3.select(this.parentNode.appendChild(this))
+        //         return ('#ffff00')
+        //     } else if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
+        //         d3.select(this.parentNode.appendChild(this))
+        //         return ('#ff0000')
+        //     } else
+        //         d3.select(this.parentNode.appendChild(this))
+        //     return ('#f5f5f5')
+        // })
 
         // ... and give it a wider stroke
         .style('stroke-width', function(d, i) {
@@ -123,6 +123,18 @@ d3.json('data/states.json', function(error, features) {
                     return '0.6';
                 }
             })
+
+        .style("stroke-dasharray", function(d, i) {
+            var ballotKey = dataById[d.properties.name].ballotkey;
+            var ballotPass = dataById[d.properties.name].ballotpass;
+            if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
+                d3.select(this.parentNode.appendChild(this))
+                return ('3,3')
+            } else  if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
+                d3.select(this.parentNode.appendChild(this))
+                return ('0,0')
+            }
+        })
             .style('cursor', 'default')
             // Fill state based on status value
             .style('fill', function(d) {
