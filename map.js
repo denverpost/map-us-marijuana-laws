@@ -115,26 +115,26 @@ d3.json('data/states.json', function(error, features) {
 
         // ... and give it a wider stroke
         .style('stroke-width', function(d, i) {
-                var ballotKey = dataById[d.properties.name].ballotkey;
-                if (ballotKey != 'No') {
-                    d3.select(this.parentNode.appendChild(this))
-                    return '2.5';
-                } else {
-                    return '0.6';
-                }
-            })
-
-        .style("stroke-dasharray", function(d, i) {
             var ballotKey = dataById[d.properties.name].ballotkey;
-            var ballotPass = dataById[d.properties.name].ballotpass;
-            if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
+            if (ballotKey != 'No') {
                 d3.select(this.parentNode.appendChild(this))
-                return ('3,3')
-            } else  if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
-                d3.select(this.parentNode.appendChild(this))
-                return ('0,0')
+                return '2.5';
+            } else {
+                return '0.6';
             }
         })
+
+        .style("stroke-dasharray", function(d, i) {
+                var ballotKey = dataById[d.properties.name].ballotkey;
+                var ballotPass = dataById[d.properties.name].ballotpass;
+                if ((ballotKey == 'Yes') && (ballotPass == 'Yes')) {
+                    d3.select(this.parentNode.appendChild(this))
+                    return ('3,3')
+                } else if ((ballotKey == 'Yes') && (ballotPass == 'No')) {
+                    d3.select(this.parentNode.appendChild(this))
+                    return ('0,0')
+                }
+            })
             .style('cursor', 'default')
             // Fill state based on status value
             .style('fill', function(d) {
