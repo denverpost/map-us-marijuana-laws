@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U.S. Marijuana Laws</title>
+    <!-- Thanks to this great tutorial: http://data-map-d3.readthedocs.io/en/latest/index.html -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="twleve columns" id="map-title">U.S. Cannabis Laws</h1>
+        </div>
+        <div class="row" id="legend-container">
+            <p style="text-align: center"><span style="border-top: 5px solid rgb(49, 163, 84); margin-right: 10px; font-size: 13px;">Recreational marijuana states</span>
+                <span style="border-top: 5px solid rgb(161, 217, 155); margin-right: 10px; font-size: 13px;">Medical marijuana states</span>
+                <span style="border-top: 5px solid #bdbdbd; margin-right: 10px; font-size: 13px;">Marijuana prohibition states</span>
+                <br>
+                <span style="border-top: 5px solid rgb(0,255,0); margin-right: 10px; font-size: 13px;">2016 ballot measure passed</span>
+                <span style="border-top: 5px solid rgb(255,0,0); margin-right: 10px; font-size: 13px;">2016 ballot measure failed</span>
+            </p>
+        </div>
+        <div class="row" id="legend-container-mobile">
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(49, 163, 84); ">Recreational marijuana states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(161, 217, 155); ">Medical marijuana states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid #bdbdbd; ">Marijuana prohibition states</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(0,255,0); ">2016 ballot measure passed</span></p>
+            <p class="legend-mobile"><span style="border-top: 5px solid rgb(255,0,0); ">2016 ballot measure failed</span></p>
+        </div>
+        <div class="row" id="map"></div>
+        <div id="details" class="hidden row"></div>
+        <div class="row" id="initial">
+            <div class="five columns">
+                <p>The interactive map includes information on when states adopted regulations, whether legalization measures were voter-approved or enacted via legislation, CBD-only laws, as well as whether possession of small amounts of marijuana has been decriminalized, meaning a citation instead of possible jail time or criminal record for a first-time offense.</p>
+            </div>
+            <div class="seven columns">
+                <h5 style="text-align: center;">Instructions</h5>
+                <ul>
+                    <li>Click a state for details about its marijuana laws</li>
+                    <li>Double-click to zoom in on small areas, such as Washington, DC; shift + double-click to zoom out. "Grab" map to move it.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer">
+            <strong>Data sources</strong>: National Conference of State Legislatures, National Organization for the Reform of Marijuana Laws
+        </div>
+    </div>
+    <!-- Mustache template, rendered later to show the details of a feature -->
+    <script id="template" type="x-tmpl-mustache">
+        <h3 class="five columns state-name">{{ state }}</h3>
+        <table class="six columns">
+            <tr>
+                <th>Recreational:</th>
+                <td>{{ recreational }} </td>
+            </tr>
+            <tr>
+                <th>Medical:</th>
+                <td>{{ medical }} </td>
+            </tr>
+            <tr>
+                <th>CBD law:</th>
+                <td>{{ cbd }} </td>
+            </tr>
+            <tr>
+                <th>Decriminalized:</th>
+                <td>{{ decriminalization }} </td>
+            </tr>
+            <tr>
+                <th>Mandatory sentencing:</th>
+                <td>{{ mandatorysentencing }} </td>
+            </tr>
+            <tr>
+                <th>2016 ballot measure:</th>
+                <td>{{ ballot }} </td>
+            </tr>
+            <tr>
+                <th>Article archive:</th>
+                <td><a target="_blank" href="{{ statelink }}">{{ state }} news</a> </td>
+            </tr>
+        </table>
+        <a href="#" id="close-details" class="one column" onclick="hideDetails(); return false;">&#x2716;</a>
+    </script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="election-map.js"></script>
+</body>
+
+</html>
