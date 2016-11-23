@@ -99,7 +99,7 @@ d3.json('data/states.json', function(error, features) {
             //     }
             // })
             .style('stroke', '#f5f5f5')
-            .style('stroke-width', '1.25')
+            .style('stroke-width', '1.5')
 
         // This for different colored borders based on ballotpass status
         // .style("stroke", function(d, i) {
