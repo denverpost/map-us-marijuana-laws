@@ -1,5 +1,6 @@
 body {
     margin: 25px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .tooltip {
@@ -75,8 +76,7 @@ p.legend-mobile {
 }
 
 g.features {
-    stroke: #d8d8d8;
-    stroke-width: 0.5;
+    stroke: #eee;
 }
 
 g.features path:hover {
@@ -84,6 +84,10 @@ g.features path:hover {
 }
 
 h3.state-name {
+    text-align: center;
+}
+
+h1#map-title {
     text-align: center;
 }
 
@@ -109,5 +113,6 @@ ul {
 @media only screen and (max-width: 400px) {
     h1#map-title {
         font-size: 3.3rem;
+        text-align: center;
     }
 }

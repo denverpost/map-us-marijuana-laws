@@ -59,7 +59,7 @@ d3.json('data/states.json', function(error, features) {
 
     // Read the data for the cartogram
     //d3.csv('data/result.csv', function(data) {
-    d3.json('data/20161123.js', function(data) {
+    d3.json('data/20180123.js', function(data) {
 
         // We store the data object in the variable which is accessible from
         // outside of this function.
